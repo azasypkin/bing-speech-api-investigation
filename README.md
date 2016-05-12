@@ -17,6 +17,7 @@ See more at https://www.microsoft.com/cognitive-services/en-us/speech-api/docume
 
 # Demo
 [Official demo page](https://www.microsoft.com/cognitive-services/en-us/speech-api)
+[SpeechJS Demo](https://azasypkin.github.io/bing-speech-api-investigation/examples/speechjs/)
 
 # Supported languages
 de-DE 	zh-TW 	zh-HK 	ru-RU
