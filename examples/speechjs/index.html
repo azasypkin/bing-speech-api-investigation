@@ -93,7 +93,7 @@ document is confidential and proprietary to Microsoft. It is disclosed and can b
                 client.startMicAndRecognition();
                 setTimeout(function () {
                     client.endMicAndRecognition();
-                }, 5000);
+                }, 2000);
             } else {
                 if (luisCfg) {
                     client = Microsoft.ProjectOxford.SpeechRecognition.SpeechRecognitionServiceFactory.createDataClientWithIntent(
@@ -112,7 +112,7 @@ document is confidential and proprietary to Microsoft. It is disclosed and can b
                 request = new XMLHttpRequest();
                 request.open(
                     'GET',
-                    (mode == Microsoft.ProjectOxford.SpeechRecognition.SpeechRecognitionMode.shortPhrase) ? "hello.wav" : "batman.wav",
+                    (mode == Microsoft.ProjectOxford.SpeechRecognition.SpeechRecognitionMode.shortPhrase) ? "whatstheweatherlike.wav" : "batman.wav",
                     true);
                 request.responseType = 'arraybuffer';
                 request.onload = function () {
@@ -144,7 +144,7 @@ document is confidential and proprietary to Microsoft. It is disclosed and can b
     <table width="100%">
         <tr>
             <td align="right"/>
-            <td><input id="useMic" type="checkbox">Use Microphone</td>
+            <td><input id="useMic" type="checkbox">Use Microphone (2000 ms audio)</td>
         </tr>
         <tr>
             <td align="right">Mode:</td>
