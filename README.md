@@ -16,8 +16,7 @@ See more at https://www.microsoft.com/cognitive-services/en-us/speech-api/docume
 | Text to speech |                              | $4 per 1000 transactions |
 
 # Demo
-[Official demo page](https://www.microsoft.com/cognitive-services/en-us/speech-api)
-[SpeechJS Demo](https://azasypkin.github.io/bing-speech-api-investigation/examples/speechjs/)
+[Official demo page](https://www.microsoft.com/cognitive-services/en-us/speech-api);
 
 # Supported languages
 de-DE 	zh-TW 	zh-HK 	ru-RU
@@ -33,4 +32,20 @@ The Speech Recognition API provides the ability to convert spoken audio to text 
 
 * Using the REST API means getting only one reco result back with no partial results. Documentation for the REST API can be found here and code samples here.
 * Using the client library allows for real-time streaming, meaning that as audio is being sent or spoken to the server, partial recognition results are returned at the same time. Real-time streaming is supported on Android, iOS, and Windows.
+
+## SpeechJS (Javascript lib to abstract from REST API)
+* [SpeechJS Library](https://github.com/Microsoft/ProjectOxford-ClientSDK/tree/master/Speech/Speech.JS);
+* [SpeechJS Demo at GitHub Pages](https://azasypkin.github.io/bing-speech-api-investigation/examples/speechjs/). Taken from [Microsoft Getting Started](https://www.microsoft.com/cognitive-services/en-us/speech-api/documentation/getstarted/getstartedjs).
+
+## HTTP REST API
+[API Reference] (https://www.microsoft.com/cognitive-services/en-us/speech-api/documentation/api-reference-rest/home)
+
+> Your application must endpoint the audio to determine start and end of speech, which in turn is used by the service to determine the start and end of the request. You __may not upload more than 10 seconds of audio__ in any one request and __the total request duration cannot exceed 14 seconds__.
+
+
+> The Voice API supports audio/wav using the following codecs: 
+* PCM single channel;
+* Siren;
+* SirenSR.
+
 
