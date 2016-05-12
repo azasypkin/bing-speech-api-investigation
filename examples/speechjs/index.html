@@ -47,7 +47,7 @@ document is confidential and proprietary to Microsoft. It is disclosed and can b
         }
 
         function getLanguage() {
-            return "en-us";
+            return document.getElementById("locale").value;
         }
 
         function clearText() {
@@ -93,7 +93,7 @@ document is confidential and proprietary to Microsoft. It is disclosed and can b
                 client.startMicAndRecognition();
                 setTimeout(function () {
                     client.endMicAndRecognition();
-                }, 2000);
+                }, 3000);
             } else {
                 if (luisCfg) {
                     client = Microsoft.ProjectOxford.SpeechRecognition.SpeechRecognitionServiceFactory.createDataClientWithIntent(
@@ -144,7 +144,8 @@ document is confidential and proprietary to Microsoft. It is disclosed and can b
     <table width="100%">
         <tr>
             <td align="right"/>
-            <td><input id="useMic" type="checkbox">Use Microphone (2000 ms audio)</td>
+            <td><input id="useMic" type="checkbox">Use Microphone (3000 ms audio)</td>
+            <td><input id="locale" type="text" value="en-us" /></td>
         </tr>
         <tr>
             <td align="right">Mode:</td>
